@@ -2,8 +2,9 @@ FROM jupyter/base-notebook:python-3.8.8
 
 USER root
 
-RUN apt-get -y update \
- && apt-get install -y dbus-x11 \
+RUN apt-get -y update && \
+   apt-get install -y --no-install-recommends \
+   dbus-x11 \
    firefox \
    xfce4 \
    xfce4-panel \
