@@ -4,14 +4,7 @@ USER root
 
 RUN apt-get -y update && \
    apt-get install -y --no-install-recommends \
-   dbus-x11 \
-   firefox \
-   xfce4 \
-   xfce4-panel \
-   xfce4-session \
-   xfce4-settings \
-   xorg \
-   xubuntu-icon-theme
+   xfce4 
 
 # Remove light-locker to prevent screen lock
 RUN wget 'https://sourceforge.net/projects/turbovnc/files/2.2.5/turbovnc_2.2.5_amd64.deb/download' -O turbovnc_2.2.5_amd64.deb && \
